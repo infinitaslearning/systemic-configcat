@@ -19,7 +19,9 @@ export default (): Component<ConfigCatClient, { config: Config }> => {
       return configcatClient;
     },
     stop: async () => {
-      configcatClient.dispose();
+      if (configcatClient) {
+        configcatClient.dispose();
+      }
     },
   }
 };
