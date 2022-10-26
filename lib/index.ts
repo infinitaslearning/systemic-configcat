@@ -4,7 +4,7 @@ import * as configcat from 'configcat-node'
 type Config = {
   key: string
 }
-type ConfigCatClient = ReturnType<typeof configcat.createClient>
+export type ConfigCatClient = ReturnType<typeof configcat.createClient>
 
 export default (): Component<ConfigCatClient, { config: Config }> => {
   let configcatClient: ConfigCatClient;
