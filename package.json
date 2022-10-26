@@ -1,0 +1,34 @@
+{
+  "name": "@infinitaslearning/systemic-configcat",
+  "version": "1.0.0",
+  "description": "A systemic configcat component",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && tsc --declaration --declarationDir ."
+  },
+  "keywords": [
+    "systemic",
+    "configcat"
+  ],
+  "author": "ILPT",
+  "license": "ISC",
+  "dependencies": {
+    "configcat-node": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "systemic": "^4.1.2",
+    "typescript": "^4.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinitaslearning/systemic-configcat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/infinitaslearning/systemic-configcat/issues"
+  },
+  "homepage": "https://github.com/infinitaslearning/systemic-configcat#readme",
+  "types": "./index.d.ts"
+}
