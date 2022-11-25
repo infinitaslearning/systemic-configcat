@@ -4,20 +4,28 @@ A typescript [systemic](https://github.com/guidesmiths/systemic) [configcat](htt
 ## Usage
 ```js
 const System = require('systemic')
-const configcat = require('@infinitaslearning/systemic-configcat')
+const configCat = require('@infinitaslearning/systemic-configcat')
 
 new System()
     .configure({
-        configcat: {
+        configCat: {
             key: 'YOUR-CONFIGCAT-KEY' 
         }
     })
-    .add('configcat', configcat())
+    .add('configCat', configCat())
     .dependsOn('config')
     .start((err, components) => {
-        // Do stuff with components.configcat
+        // Do stuff with components.configCat
     })
 ```
 
 ### Parameters
-- **key**  your configcat key
+- **key**  your configCat key
+
+### Test mock
+```js
+const system = require('./system')
+const { configCatMock } = require('@infinitaslearning/systemic-configcat')
+
+system().set('configCat', configCatMock())
+```

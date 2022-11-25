@@ -25,3 +25,13 @@ export default (): Component<ConfigCatClient, { config: Config }> => {
     },
   }
 };
+
+export const configCatMock = ({
+  getValueAsync = jest.fn(),
+  getAllKeysAsync = jest.fn(),
+  getAllValuesAsync = jest.fn(),
+  setDefaultUser = jest.fn(),
+  clearDefaultUser = jest.fn(),
+} = {}): Pick<ConfigCatClient, 'getValueAsync' | 'getAllKeysAsync' | 'getAllValuesAsync' | 'setDefaultUser' | 'clearDefaultUser'> => ({
+  getValueAsync, getAllKeysAsync, getAllValuesAsync, setDefaultUser, clearDefaultUser
+});
