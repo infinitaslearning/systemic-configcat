@@ -29,3 +29,8 @@ const { configCatMock } = require('@infinitaslearning/systemic-configcat')
 
 system().set('configCat', configCatMock())
 ```
+
+## Version history
+
+V 2
+ - Use configCat-node version 9
