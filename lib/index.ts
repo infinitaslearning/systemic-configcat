@@ -1,21 +1,22 @@
 import { Component } from 'systemic'
-import * as configcat from 'configcat-node'
+import { getClient } from 'configcat-node'
+import type { IConfigCatClient } from 'configcat-node'
 
 type Config = {
   key: string
 }
-export type ConfigCatClient = ReturnType<typeof configcat.createClient>
+export type ConfigCatClient = IConfigCatClient;
 
 export default (): Component<ConfigCatClient, { config: Config }> => {
   let configcatClient: ConfigCatClient;
   return {
     start: async ({ config }) => {
 
-      if (!config || !config.key) {
+      if (!config?.key) {
         throw new Error('config.key is required');
       }
 
-      configcatClient = configcat.createClient(config.key)
+      configcatClient = getClient(config.key)
       return configcatClient;
     },
     stop: async () => {

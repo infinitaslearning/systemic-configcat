@@ -33,4 +33,7 @@ system().set('configCat', configCatMock())
 ## Version history
 
 V 2
- - Use configCat-node version 9
+ - Use configcat-node version 9
+
+V 3
+ - Use configcat-node version 11

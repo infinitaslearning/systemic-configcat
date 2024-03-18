@@ -1,6 +1,6 @@
 {
   "name": "@infinitaslearning/systemic-configcat",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A systemic configcat component",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,7 @@
   "author": "ILPT",
   "license": "ISC",
   "dependencies": {
-    "configcat-node": "^9.0.0"
+    "configcat-node": "^11.2.0"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",
