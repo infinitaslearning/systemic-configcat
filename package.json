@@ -14,7 +14,7 @@
   "author": "ILPT",
   "license": "ISC",
   "dependencies": {
-    "configcat-node": "^11.2.0"
+    "configcat-node": "^11.3.0"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",
